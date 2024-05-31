@@ -1,7 +1,8 @@
+import TopNav from "./components/TopNav";
 function App() {
   return (
     <>
-      <h1 className="text-3xl text-black font-bold underline">Hello world!</h1>
+      <TopNav/>
     </>
   );
 }
