@@ -16,8 +16,9 @@ This project is a simple chatbot flow builder implemented in React, utilizing th
 7. **Save Button**: Saves the flow. Displays an error if multiple nodes have empty target handles.
 
 ## Screenshots
-https://github.com/raobaba/BiteSpeed-FrontEnd-Task/assets/99542983/cf928064-30a4-4d61-a132-69d96ea36584
-https://github.com/raobaba/BiteSpeed-FrontEnd-Task/assets/99542983/7ce5f819-c845-43e3-a235-b59299780608
+![Screenshot (154)](https://github.com/raobaba/Zevi_Frontend/assets/99542983/e8c26769-952a-40bd-9ddf-d96903f61055)
+![Screenshot (155)](https://github.com/raobaba/Zevi_Frontend/assets/99542983/c496a362-f8dc-44cc-a09b-75ac873ad770)
+
 
 
 ## Installation
