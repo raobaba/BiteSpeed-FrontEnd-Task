@@ -15,6 +15,11 @@ This project is a simple chatbot flow builder implemented in React, utilizing th
 6. **Settings Panel**: Replaces the nodes panel when a node is selected, enabling users to edit text content.
 7. **Save Button**: Saves the flow. Displays an error if multiple nodes have empty target handles.
 
+## Screenshots
+![Screenshot (154)](https://github.com/raobaba/BiteSpeed-FrontEnd-Task/assets/99542983/cf928064-30a4-4d61-a132-69d96ea36584)
+![Screenshot (155)](https://github.com/raobaba/BiteSpeed-FrontEnd-Task/assets/99542983/7ce5f819-c845-43e3-a235-b59299780608)
+
+
 ## Installation
 1. Clone the repository:
    ```
