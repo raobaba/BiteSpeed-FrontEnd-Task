@@ -15,12 +15,6 @@ This project is a simple chatbot flow builder implemented in React, utilizing th
 6. **Settings Panel**: Replaces the nodes panel when a node is selected, enabling users to edit text content.
 7. **Save Button**: Saves the flow. Displays an error if multiple nodes have empty target handles.
 
-## Screenshots
-![Screenshot (154)](https://github.com/raobaba/Zevi_Frontend/assets/99542983/e8c26769-952a-40bd-9ddf-d96903f61055)
-![Screenshot (155)](https://github.com/raobaba/Zevi_Frontend/assets/99542983/c496a362-f8dc-44cc-a09b-75ac873ad770)
-
-
-
 ## Installation
 1. Clone the repository:
    ```
@@ -52,5 +46,8 @@ Contributions are welcome! Please see the [contributing guidelines](CONTRIBUTING
 ## License
 This project is licensed under the [MIT License](LICENSE).
 ```
+## Screenshots
+![Screenshot (154)](https://github.com/raobaba/Zevi_Frontend/assets/99542983/e8c26769-952a-40bd-9ddf-d96903f61055)
+![Screenshot (155)](https://github.com/raobaba/Zevi_Frontend/assets/99542983/c496a362-f8dc-44cc-a09b-75ac873ad770)
 
 Feel free to adjust the content according to your project's specifics and requirements!
