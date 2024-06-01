@@ -1,13 +1,13 @@
-import React from "react";
-
-const TopNav = () => {
+const TopNav = ({ saveFlow }) => {
   return (
-    <div className="text-xs text-black flex justify-center border-slate-800 p-4 bg-white">
-      <button className="rounded-lg border py-2 px-4 text-base font-bold cursor-pointer transition-colors duration-300 hover:border-turquoise focus:outline-none focus-visible:ring-4 focus-visible:ring-blue-500">
+    // Container div with classes for styling and centering content
+    <div className="savingChange mt-4 flex justify-center items-center">
+      {/* Button that triggers the saveFlow function when clicked */}
+      <button onClick={saveFlow} className="cursor-pointer text-black py-2 px-4 rounded">
         Save Changes
       </button>
     </div>
   );
-};
+}
 
-export default TopNav;
+export default TopNav; // Export the TopNav component as the default export

@@ -1,40 +1,39 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 const Sidebar = () => {
-  // State to control the visibility of the usage information
+  // Declare a state variable `showUsage` with the initial value `true`
   const [showUsage, setShowUsage] = useState(true);
 
-  // useEffect hook to hide the usage information after 5 seconds
+  // useEffect hook to set a timer that changes `showUsage` to `false` after 5 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowUsage(false);
     }, 5000);
-    // Cleanup the timer on component unmount
+
+    // Cleanup function to clear the timer if the component unmounts
     return () => clearTimeout(timer);
-  }, []);
+  }, [showUsage]);
 
-  // Conditional class to control the display of the usage information
-  const displayUsage = showUsage ? "" : "hidden";
+  // Determine the display style based on the `showUsage` state
+  const displayUsage = showUsage ? '' : 'none';
 
-  // Function to handle the drag start event for nodes
+  // Function to handle the drag start event
   const onDragStart = (event, nodeType) => {
-    event.dataTransfer.setData("application/reactflow", nodeType);
-    event.dataTransfer.effectAllowed = "move";
+    event.dataTransfer.setData('application/reactflow', nodeType); // Set the data for the drag event
+    event.dataTransfer.effectAllowed = 'move'; // Set the allowed drag effect
   };
 
-  // Render the Sidebar component
   return (
-    <div className="h-full border border-slate-700">
-      {/* Usage information displayed on first load */}
-      <div class={`${displayUsage} rounded-lg p-4 m-2 text-black bg-gray-200 inline-block`}>
-        Drag the node below to the pane on the left to add new nodes.
+    <>
+      {/* Display the usage description based on the `displayUsage` style */}
+      <div className="description" style={{ display: displayUsage }}>
+        Drag below node to the pane on the left to add new nodes.
       </div>
-
-      <aside className="p-3 text-sm text-slate-950 bg-white flex">
-        {/* Draggable node */}
+      <aside>
+        {/* Draggable node element */}
         <div
-          className=" rounded p-2 text-base font-medium border border-slate-700 text-black-600 cursor-grab transition-colors duration-200 flex justify-center items-center flex-col w-24"
-          onDragStart={(event) => onDragStart(event, "default")}
+          className="appnode"
+          onDragStart={(event) => onDragStart(event, 'default')}
           draggable
         >
           <span
@@ -46,8 +45,8 @@ const Sidebar = () => {
           Message
         </div>
       </aside>
-    </div>
+    </>
   );
 };
 
-export default Sidebar;
+export default Sidebar; // Export the Sidebar component as the default export
